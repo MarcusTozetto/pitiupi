@@ -10,7 +10,7 @@ Neste repositório está também o plugin **21 (blackjack)**, em [`plugins/black
 
 ## Versão pronta para rodar (Windows)
 
-A pasta [`release/`](release) tem o núcleo e os plugins já compilados. Basta ter Java 17 ou mais novo (`winget install Microsoft.OpenJDK.17`) e dar dois cliques em **`release\rodar.cmd`**. Não precisa de Ant.
+A pasta [`release/`](release) tem o núcleo e os plugins já compilados. Basta ter Java 17 ou mais novo (`winget install Microsoft.OpenJDK.17`) e dar dois cliques em **`release\rodar.cmd`** (ou, no PowerShell, `.\release\rodar.cmd`). Não precisa de Ant.
 
 Na primeira vez, permita o Java no firewall em **Redes privadas**.
 
@@ -43,7 +43,7 @@ cd %USERPROFILE%\Downloads\pitiupi
 scripts\pitiupi.cmd run --all
 ```
 
-Se a pasta for outra, troque o `cd`. No PowerShell o comando é o mesmo: `scripts\pitiupi.cmd run --all`.
+Se a pasta for outra, troque o `cd`. No PowerShell é preciso o `.\` na frente: `.\scripts\pitiupi.cmd run --all`.
 
 `java`, `javac` e `ant` precisam estar no PATH. No PowerShell, o JDK:
 
